@@ -22,11 +22,11 @@ const Post = ({ params }) => {
       <h1 className=" text-7xl font-bold text-green-500 text-center pt-20">
         Post Details
       </h1>
-      <div className="flex flex-col justify-center text-lg gap-3 font-semibold  text-black rounded-lg bg-green-500 mt-10 p-14 ">
-        <p>{details.id}</p>
-        <p>{details.title}</p>
-        <p>{details.content}</p>
-        <p>{details.date}</p>
+      <div className="flex flex-col justify-center text-lg    text-black rounded-full bg-green-500 mt-10 p-20 text-center">
+        <p className="py-2 text-xl font-bold">{details.id}</p>
+        <p className="py-2 text-xl font-semibold ">{details.title}</p>
+        <p className="py-2 text-justify">{details.content}</p>
+        <p className="py-2 text-xl font-bold">{details.date}</p>
       </div>
     </div>
   );
